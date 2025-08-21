@@ -92,3 +92,65 @@ header nav ul{
     max-width: 800px;
     color: #0a111e;
 }
+
+.windows{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Windows_logo_-_2021.svg/800px-Windows_logo_-_2021.svg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.tim-berners-lee{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tim_Berners-Lee_2012.jpg/800px-Tim_Berners-Lee_2012.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.firefox{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Firefox_logo.svg/800px-Firefox_logo.svg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.john{
+    width: 100%;
+    height: 300px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/John_Smith_2013.jpg/800px-John_Smith_2013.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 20px;
+    }
+    
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .pesquisa{
+        width: 90%;
+    }
+    
+    .noticia{
+        width: 95%;
+        padding: 15px;
+    }
+}

@@ -112,3 +112,36 @@ header nav ul{
 .cartao a :hover{
     color: rgba(63,159,219,1);
 }
+
+@media (max-width: 768px) {
+    header{
+        padding: 20px 40px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .pesquisa{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .artigos{
+        padding: 20px;
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+
+    .cartao{
+        width: 100%;
+        padding-left: 0;
+    }
+}
