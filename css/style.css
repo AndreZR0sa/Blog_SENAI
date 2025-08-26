@@ -19,6 +19,7 @@ ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    gap: 150px;
 }
 
 header{
@@ -26,11 +27,11 @@ header{
     padding: 40px 120px; 
 }
 
-header h1 :hover{
-    color: rgb(87, 76, 232, 1);
+header h1:hover{
+    color: rgba(87, 76, 232, 1);
 }
 
-header li :hover{
+header li:hover{
     color: rgba(63,159,219,1);
 }
 
@@ -49,7 +50,7 @@ h1{
 header nav ul{
     display: flex;
     width: 80%;
-    gap: 750px;
+    justify-content: space-between;
 }
 
 .pesquisa{
@@ -62,6 +63,7 @@ header nav ul{
     backdrop-filter: blur(10px);
     color: #0a111e;
     width: 55%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .pesquisa input{
@@ -71,7 +73,7 @@ header nav ul{
     color: #ffffff;
 }
 
-.pesquisa ::placeholder{
+.pesquisa::placeholder{
     color: #ffffff;
     opacity: 0.7;
 }
@@ -88,28 +90,41 @@ header nav ul{
 }
 
 .cartao{
+    display: flex;
     flex-direction: column;
     width: 1200px;
-    height: 400px;
-    padding-left: 25%;
+    height: auto;
+    padding: 20px;
     color: #000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cartao:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .data{
-    padding-right: 625px;
+    display: inline-block;
+    margin-right: auto;
+    color: #666;
 }
 
 .curtir{
     border: none;
     cursor: pointer;
-
+    background: transparent;
+    font-size: 1.2em;
 }
 
 .artigo-texto{
     padding-bottom: 20px;
 }
 
-.cartao a :hover{
+.cartao a:hover{
     color: rgba(63,159,219,1);
 }
 
@@ -142,6 +157,5 @@ header nav ul{
 
     .cartao{
         width: 100%;
-        padding-left: 0;
     }
 }
